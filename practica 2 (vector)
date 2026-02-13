@@ -1,1 +1,41 @@
-{"cells":[{"cell_type":"code","source":["# Importamos la librería NumPy, que se usa para cálculo numérico\n","import numpy as np"],"metadata":{"id":"1Ze43ewwZccg","executionInfo":{"status":"ok","timestamp":1770993079938,"user_tz":360,"elapsed":6,"user":{"displayName":"","userId":""}}},"execution_count":27,"outputs":[]},{"cell_type":"code","source":["# Se crea un arreglo (vector) de una dimensión con los valores dados\n","vector = np.array([1, 2, 3, 4, 5])"],"metadata":{"id":"-t1x_QLUZeYg","executionInfo":{"status":"ok","timestamp":1770993079194,"user_tz":360,"elapsed":6,"user":{"displayName":"","userId":""}}},"execution_count":26,"outputs":[]},{"cell_type":"code","source":["#se muestra el vector\n","print(\"Vector:\", vector)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"LtIeio7RZhuY","executionInfo":{"status":"ok","timestamp":1770993078323,"user_tz":360,"elapsed":15,"user":{"displayName":"","userId":""}},"outputId":"ab7d1fbb-e8f9-4050-86e4-7545f3f614d8"},"execution_count":25,"outputs":[{"output_type":"stream","name":"stdout","text":["Vector: [1 2 3 4 5]\n"]}]},{"cell_type":"code","source":["# shape indica la estructura del arreglo\n","# (5,) significa que tiene 5 elementos en una sola dimensión\n","print(\"Forma:\", vector.shape)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"BbNV4OCPZp7I","executionInfo":{"status":"ok","timestamp":1770993077569,"user_tz":360,"elapsed":10,"user":{"displayName":"","userId":""}},"outputId":"7b87b2f4-a517-423e-e2b7-f2923aaa439f"},"execution_count":24,"outputs":[{"output_type":"stream","name":"stdout","text":["Forma: (5,)\n"]}]},{"cell_type":"code","source":["# size indica el número total de elementos del arreglo\n","print(\"Tamaño:\", vector.size)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"UPbY6fm5Zzdx","executionInfo":{"status":"ok","timestamp":1770993076224,"user_tz":360,"elapsed":6,"user":{"displayName":"","userId":""}},"outputId":"9d9332f5-cfe9-4d9d-dda7-bd67b09ce893"},"execution_count":23,"outputs":[{"output_type":"stream","name":"stdout","text":["Tamaño: 5\n"]}]},{"cell_type":"code","source":["# dtype indica el tipo de dato almacenado en el arreglo\n","# Ejemplo: int32, int64, float64, etc.\n","print(\"Tipo de dato:\", vector.dtype)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"U2HORR3VZ2Tw","executionInfo":{"status":"ok","timestamp":1770993075579,"user_tz":360,"elapsed":6,"user":{"displayName":"","userId":""}},"outputId":"da28e581-67b0-4a45-9d86-2db42d76e59a"},"execution_count":22,"outputs":[{"output_type":"stream","name":"stdout","text":["Tipo de dato: int64\n"]}]},{"cell_type":"code","source":["# En NumPy todos los elementos tienen el mismo tipo\n","print(\"Tipo de dato del contenido:\", vector.dtype)"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"uTYPAj8eZ45Q","executionInfo":{"status":"ok","timestamp":1770993074939,"user_tz":360,"elapsed":7,"user":{"displayName":"","userId":""}},"outputId":"c7c635a8-14ef-4f5f-eef9-86c78a65e51a"},"execution_count":21,"outputs":[{"output_type":"stream","name":"stdout","text":["Tipo de dato del contenido: int64\n"]}]},{"cell_type":"code","source":["# En Python los índices empiezan en 0\n","print(\"Primer elemento:\", vector[0])"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"8ZZgKTUtZ7Wo","executionInfo":{"status":"ok","timestamp":1770993073390,"user_tz":360,"elapsed":9,"user":{"displayName":"","userId":""}},"outputId":"0697c4ee-f777-4be6-9d9d-9e9758b7fd06"},"execution_count":20,"outputs":[{"output_type":"stream","name":"stdout","text":["Primer elemento: 1\n"]}]},{"cell_type":"code","source":["# -1 accede al último elemento del vector\n","print(\"Último elemento:\", vector[-1])"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"MrfLqSzhZ91Q","executionInfo":{"status":"ok","timestamp":1770993071069,"user_tz":360,"elapsed":42,"user":{"displayName":"","userId":""}},"outputId":"43548388-a436-431f-c804-7f2c00a3fe76"},"execution_count":18,"outputs":[{"output_type":"stream","name":"stdout","text":["Último elemento: 5\n"]}]},{"cell_type":"code","source":["# -2: significa desde el penúltimo hasta el final\n","print(\"Dos últimos elementos:\", vector[-2:])"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"OJRk7564aATp","executionInfo":{"status":"ok","timestamp":1770993072124,"user_tz":360,"elapsed":15,"user":{"displayName":"","userId":""}},"outputId":"e72f6dce-b891-4e84-986c-40090ac4aee8"},"execution_count":19,"outputs":[{"output_type":"stream","name":"stdout","text":["Dos últimos elementos: [4 5]\n"]}]},{"cell_type":"code","source":["import numpy as np\n","\n","vector = np.array([1, 2, 3, 4, 5])\n","\n","print(\"Vector:\", vector)\n","print(\"Forma:\", vector.shape)\n","print(\"Tamaño:\", vector.size)\n","print(\"Tipo de dato:\", vector.dtype)\n","print(\"Tipo de dato del contenido:\", vector.dtype)\n","\n","print(\"Primer elemento:\", vector[0])\n","print(\"Último elemento:\", vector[-1])\n","print(\"Dos últimos:\", vector[-2:])\n"],"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"kvQSLFLvX_Ll","executionInfo":{"status":"ok","timestamp":1770993068821,"user_tz":360,"elapsed":47,"user":{"displayName":"","userId":""}},"outputId":"8c856016-08bb-475e-fa74-9de6732abee8"},"execution_count":17,"outputs":[{"output_type":"stream","name":"stdout","text":["Vector: [1 2 3 4 5]\n","Forma: (5,)\n","Tamaño: 5\n","Tipo de dato: int64\n","Tipo de dato del contenido: int64\n","Primer elemento: 1\n","Último elemento: 5\n","Dos últimos: [4 5]\n"]}]}],"metadata":{"colab":{"name":"Te damos la bienvenida a Colaboratory","toc_visible":true,"provenance":[{"file_id":"/v2/external/notebooks/intro.ipynb","timestamp":1770994192949}]},"kernelspec":{"display_name":"Python 3","name":"python3"}},"nbformat":4,"nbformat_minor":0}
+https://colab.research.google.com/drive/1HQPwkqnZFMtw1nf9TBNUhdNq6O5fD8Bc#scrollTo=kvQSLFLvX_Ll
+
+por problemas con el codigo le mando el kink en colab y el codigo escrito
+
+# Importamos la librería NumPy, que se usa para cálculo numérico
+import numpy as np
+# Se crea un arreglo (vector) de una dimensión con los valores dados
+vector = np.array([1, 2, 3, 4, 5])
+#se muestra el vector
+print("Vector:", vector)
+# shape indica la estructura del arreglo
+# (5,) significa que tiene 5 elementos en una sola dimensión
+print("Forma:", vector.shape)
+# size indica el número total de elementos del arreglo
+print("Tamaño:", vector.size)
+# dtype indica el tipo de dato almacenado en el arreglo
+# Ejemplo: int32, int64, float64, etc.
+print("Tipo de dato:", vector.dtype)
+# En NumPy todos los elementos tienen el mismo tipo
+print("Tipo de dato del contenido:", vector.dtype)
+# En Python los índices empiezan en 0
+print("Primer elemento:", vector[0])
+# -1 accede al último elemento del vector
+print("Último elemento:", vector[-1])
+# -2: significa desde el penúltimo hasta el final
+print("Dos últimos elementos:", vector[-2:])
+
+codigo completo sin documentacion
+import numpy as np
+
+vector = np.array([1, 2, 3, 4, 5])
+
+print("Vector:", vector)
+print("Forma:", vector.shape)
+print("Tamaño:", vector.size)
+print("Tipo de dato:", vector.dtype)
+print("Tipo de dato del contenido:", vector.dtype)
+
+print("Primer elemento:", vector[0])
+print("Último elemento:", vector[-1])
+print("Dos últimos:", vector[-2:])
